@@ -39,7 +39,7 @@ body{
 .header ul{
 	margin:0;
 	list-style:none;
-	padding:13px 0 0;
+	padding:40px 0 0; /*Changed to lower top menu*/
 	float:right;
 }
 .header ul li{
@@ -114,7 +114,7 @@ body{
 	float:left;
 	background:url(../images/interface.jpg) no-repeat 0 -68px!important;
 	margin:60px 0 0 48px;
-	height:400px;
+	height:400px; /*Changed to lower down the footer separator*/
 	padding:0;
 }
 .body ul.blog li div{
@@ -128,7 +128,7 @@ body{
 }
 .body ul.blog li div a img{
 	border:0;
-	margin:0 0 0 -3px;
+	margin:0 0 -16px -3px;   /*Changed  top margin to fit text below picture*/
 }
 .body ul.blog li div a img:hover{
 	filter:alpha(opacity=80);
@@ -141,7 +141,8 @@ body{
 	font-family: 'RokkittRegular';
 	margin:17px 0 0 10px;
 	line-height:20px;
-	font-size:14px;
+	font-size:15px; /*Changed font size*/
+	font-weight:bold; /*added this attribute*/
 	background:none;
 	padding:0;
 }
@@ -160,7 +161,7 @@ body{
 	font-style:italic;
 	text-decoration:none;
 	padding:98px 0 0;
-	margin:32px auto 0;
+	margin:0 auto 0; /*Changed top margin to shift button-more upwards*/
 	display:block;
 	width: 150px;
 	background:url(../images/button-more.jpg) no-repeat center top;
@@ -301,7 +302,7 @@ body{
 }
 .footer ul{
 	list-style:none;
-	margin:0 0 0 60px;
+	margin:0;
 	padding:0;
 	overflow:hidden;
 	float:left;
@@ -333,7 +334,7 @@ body{
 	font-size:10px;
 	font-family: Trebuchet MS;
 	font-weight:bold;
-	float:left;
+	float:right; /*Changed to make Copyright right aligned*/
 	margin:6px 0 0 135px;
 }
 .footer div.connect{
