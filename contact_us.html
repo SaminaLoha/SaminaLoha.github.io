@@ -20,20 +20,16 @@
 				</ul>
 			</div>
 			<div class="body">
-				<div id="featured">
-					<h3>Welcome to Upkar Group</h3>
-					<p>Spices or what we call as 'Masala' play a very important role in Indian cooking. 
-					If there are no spices, it’s not Indian food. We use spices to make our food more
-					hot and tasty. Some of the spices are required for the aroma, some for flavor and some
-					for complimenting other spices.</p>
-					<br></br>
-					<p>Several decades ago, housewives used to grind their spices manually at home 
-					and make their own blends for use in their cooking. To make this process easier
-					for the housewife,’Upkar' came up with ready-to-use ground spices. With the use
-					of automatic machine, we at Upkar have been successful in taking the Indian spices
-					and taste across thousands of home across Rajasthan and are expanding further.</p>
-					<input type="button" value="Read more" onClick="parent.location='about.html'"/>
-				</div>
+				 <form action="php_mailer/form_to_email.php" method="post">
+					Name:<br>
+					<input type="text" name="name"><br>
+					E-Mail:<br> 
+					<input type="text" name="email"><br>
+					Message:<br>
+					<input type="text" name="message"><br><br>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</form> 
 				<ul class="blog">
 					<li>
 						<div>
