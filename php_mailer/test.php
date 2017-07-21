@@ -1,1 +1,3 @@
-dsdds
+<?php
+echo "test file";
+?>
