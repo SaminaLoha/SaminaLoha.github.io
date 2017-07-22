@@ -15,13 +15,13 @@ $mail->isSMTP();
 $mail->SMTPDebug = 2;
 $mail->Debugoutput = 'html';
 
-$mail->Host = "relay-hosting.secureserver.net";
+$mail->Host = "smtp.gmail.com";
 
-//$mail->SMTPSecure = 'tls';                            
+$mail->SMTPSecure = 'tls';                            
 
-$mail->Port = 25;
+$mail->Port = 587;
 
-//$mail->SMTPAuth = true;
+$mail->SMTPAuth = true;
 
 $mail->Username = "samina.lohawala@gmail.com";
 
@@ -34,7 +34,7 @@ $mail->addAddress($upkar_email, 'Samina');
 
 $mail->Subject = $email_subject;
 
-$mail->Body = $email_body;
+$mail->AltBody = $email_body;
 
 
 //send the message, check for errors
