@@ -11,7 +11,7 @@ $email_body="You have received a new message from $name.\n Email address:$custom
 $upkar_email="samina.lohawala@gmail.com";
 $headers="From:$customer_email \r\n";
 $mail = new PHPMailer();
-$mail->isSMTP();
+//$mail->isSMTP();
 $mail->SMTPDebug = 2;
 $mail->Debugoutput = 'html';
 
