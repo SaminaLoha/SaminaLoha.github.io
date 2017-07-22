@@ -11,17 +11,17 @@ $email_body="You have received a new message from $name.\n Email address:$custom
 $upkar_email="samina.lohawala@gmail.com";
 $headers="From:$customer_email \r\n";
 $mail = new PHPMailer();
-//$mail->isSMTP();
+$mail->isSMTP();
 $mail->SMTPDebug = 2;
 $mail->Debugoutput = 'html';
 
-$mail->Host = "smtp.gmail.com";
+$mail->Host = "relay-hosting.secureserver.net";
 
-$mail->SMTPSecure = 'tls';                            
+//$mail->SMTPSecure = 'tls';                            
 
-$mail->Port = 587;
+$mail->Port = 25;
 
-$mail->SMTPAuth = true;
+//$mail->SMTPAuth = true;
 
 $mail->Username = "samina.lohawala@gmail.com";
 
@@ -34,7 +34,7 @@ $mail->addAddress($upkar_email, 'Samina');
 
 $mail->Subject = $email_subject;
 
-$mail->AltBody = $email_body;
+$mail->Body = $email_body;
 
 
 //send the message, check for errors
