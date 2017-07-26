@@ -65,7 +65,7 @@ body{
 	overflow:hidden;
 }
 .body div#featured{
-	background:url(../images/spices_image.jpg) no-repeat right center;
+	background:url(../images/upkar_homeimage.jpg) no-repeat right center;
 	height:448px;
 	padding:0 0 17px;
 }
@@ -172,7 +172,7 @@ body{
 }
 /* New code added to add images as background on about page*/
 .body div#history{
-	background:url(../images/us_mirchi.jpg) no-repeat right top;
+	background:url(../images/upkar_foods.jpg) no-repeat right top;
 	height:300px;
 	padding:0 0 17px;
 }
