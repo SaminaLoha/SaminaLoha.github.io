@@ -46,8 +46,47 @@ body{
 	float:left;
 	margin:0 0 0 63px;
 }
-.header ul li.selected a,.header ul li a:hover{
+/*Added CSS for dropdown function*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+	margin:0 0 0 63px;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+	font-family: 'RokkittRegular';
+	border: none;
+    outline: none;
+    color: #5e5e5e;
+    background-color: inherit;
+}
+.header ul li.selected a,.header ul li a:hover,.dropdown:hover .dropbtn{
 	color:#f78117;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: #5e5e5e;
+	font-size:16px;
+	font-size:16px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #f78117;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 .header ul li a{
 	font-size:16px;
@@ -281,7 +320,7 @@ body{
 	float:left;
 	margin:0 0 0 50px;
 	width:609px;
-	background:url(../images/button-more.jpg) no-repeat left bottom;
+	/*background:url(../images/button-more.jpg) no-repeat left bottom;*/
 }
 .body ul li div h3{
 	margin:0;
@@ -294,13 +333,13 @@ body{
 .body ul li div p{
 	line-height:22px;
 	font-family: 'RokkittRegular';
-	font-size:14px;
+	font-size:18px;
 	color:#5D5D5D;
 	padding:0 0 90px;
 	margin:0;
 }
 .body ul.paging{
-	margin:15px 0 10px 210px;
+	margin:15px 0 10px 310px; /*Changed last attribute to move paging towards right*/
 }
 .body ul.paging li{
 	float:left;
@@ -339,8 +378,51 @@ body{
 .footer ul li{
 	float:left;
 }
-.footer ul li a:hover{
+/*Adding CSS for footer dropdown*/
+.dropdown_footer {
+    float: left;
+    overflow: hidden;
+}
+.dropdown_footer .dropbtn_footer {
+    border-width: 1px;
+	border-color:#5b5b5b;
+	border-style: none none none solid;
+	font-size: 10px;
+	font-family: Trebuchet MS;
+	font-weight:bold;
+	outline: none;
+    color: #5b5b5b;
+    background-color: inherit;
+	padding:0 6px;
+}
+.footer ul li a:hover,.dropdown_footer:hover .dropbtn_footer{
 	color:#F78117;
+}
+.dropdown-content_footer {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content_footer a {
+	float: none;
+	font-size: 10px;
+	font-family: Trebuchet MS;
+	font-weight:bold;
+    color: #5b5b5b;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content_footer a:hover {
+    background-color: #f78117;
+}
+
+.dropdown_footer:hover .dropdown-content_footer {
+    display: block;
 }
 .footer ul li a{
 	border-width: 1px;
