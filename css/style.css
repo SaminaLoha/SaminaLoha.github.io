@@ -339,7 +339,7 @@ body{
 	margin:0;
 }
 .body ul.paging{
-	margin:15px 0 10px 310px; /*Changed last attribute to move paging towards right*/
+	margin:15px 0 10px 450px; /*Changed last attribute to move paging towards right*/
 }
 .body ul.paging li{
 	float:left;
